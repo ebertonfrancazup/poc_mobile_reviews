@@ -32,7 +32,7 @@ source venv/bin/activate  # Para Linux e macOS
 
 7. Instale as dependências:
 
-```ruby
+```
 pip install -r pandas nltk langchain openai python-dotenv streamlit 
 ```
 
@@ -61,6 +61,7 @@ def scrape_google_play_reviews(app_id, lang, country, count=5):
 ```ruby
 streamlit run dashboard.py
 ```
+
 10. Executar testes
 
 Explicação das Funções de Teste
@@ -88,6 +89,7 @@ Testa a função print_header imprimindo um cabeçalho de teste.
 ```ruby
 python test.py
 ```
+
 11. Output:
 
 ================================================================================
