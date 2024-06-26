@@ -132,4 +132,7 @@ for index, row in comentarios_df.iterrows():
 
 # Campo de texto com a "Análise para o Conselho Executivo"
 st.header('Análise do sentimento dos usuários')
-st.text_area('-', ' '.join(analises_conselho), height=200)
+
+# Garantir que todos os itens em analises_conselho sejam strings
+analises_conselho_str = [item if isinstance(item, str) else ' '.join(item) for item in analises_conselho]
+st.text_area('-', '\n\n'.join(analises_conselho_str), height=200)

@@ -1,5 +1,5 @@
 import sys
-from utils import (load_comments, analyze_sentiment, print_header)
+from ollama_utils import (load_comments, analyze_sentiment, print_header)
 
 def main():
     if len(sys.argv) < 3:
